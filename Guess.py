@@ -1,4 +1,10 @@
-"""This game will have the function generate a random number
+"""
+Lab 1
+Group #12
+Author: James Rohr
+Date: 9-17-25
+
+This game will have the function generate a random number
  between 1-100 and give the user 5 predefined number of tries
  to guess the number"""
 
