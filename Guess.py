@@ -29,5 +29,3 @@ def guess_game():
         print(f"You have {count} guesses left. Try again!")
 
     print(f"Sorry, you are out of guesses. The secret number was {random_number}.")
-
-guess_game()
