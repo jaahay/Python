@@ -8,7 +8,7 @@ This main file allows the user to choose between two games.  First game is a ran
 guessing game, and the second game is rock paper scissors"""
 
 from Guess import guess_game
-#from RockPaperScissors_File import rockpaperscissors_game
+from RockPaperScissors import rockpaperscissors_game
 
 def main():
     user_selection = int(input("Enter your choice: \n"
@@ -19,10 +19,10 @@ def main():
         if user_selection == 1:
             guess_game()
         elif user_selection == 2:
-            #rockpaperscissors_game()
-            print("You chose an invalid option.")
+            rockpaperscissors_game()
         elif user_selection == 3:
             print("Thank you for playing!")
-            break
+        else:
+            print("You chose an invalid option.")
 if __name__ == "__main__":
     main()
