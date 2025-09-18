@@ -11,18 +11,24 @@ from Guess import guess_game
 #from RockPaperScissors_File import rockpaperscissors_game
 
 def main():
-    user_selection = int(input("Enter your choice: \n"
-                               "1. Random Number Guessing Game\n"
-                               "2. Rock Paper Scissors Game\n"
-                               "3. Exit\n"))
-    while user_selection != 3:
+    playing = True
+
+    while playing:
+        user_selection = int(input("Enter your choice: \n"
+                                "1. Random Number Guessing Game\n"
+                                "2. Rock Paper Scissors Game\n"
+                                "3. Exit\n"))
+        
         if user_selection == 1:
             guess_game()
         elif user_selection == 2:
             #rockpaperscissors_game()
-            print("You chose an invalid option.")
+            pass
         elif user_selection == 3:
             print("Thank you for playing!")
-            break
+            playing = False
+        else:
+            print("You chose an invalid option.")
+
 if __name__ == "__main__":
     main()
