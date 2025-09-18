@@ -26,6 +26,6 @@ def guess_game():
         else:
             print("Your guess is too low!")
         count -= 1
-        print(f"You have {count} guesses left. Try again!")
+        print(f"You have {count} {("guesses", "guess")[count==1]} left. Try again!")
 
     print(f"Sorry, you are out of guesses. The secret number was {random_number}.")
